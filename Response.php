@@ -1,6 +1,7 @@
 <?php
 
 require_once 'Database.php';
+require_once 'EmailService.php';
 
 class Response {
     private $conn;
@@ -80,8 +81,35 @@ class Response {
         $stmt->bindParam(':phoneNumber', $phoneNumber);
         $stmt->bindValue(':createdAt', date('Y-m-d H:i:s'));
 
-        // Execute the insert and return success or failure
-        return $stmt->execute();
+        // Execute the insert and handle email sending
+        if ($stmt->execute()) {
+            // If payment is successful (ResultCode === 0), send email receipt
+            if ($resultCode === "0") {
+                try {
+                    // Get user email from database using phone number
+                    $userStmt = $this->conn->prepare("SELECT email FROM users WHERE phone_number = ?");
+                    $userStmt->execute([$phoneNumber]);
+                    $userEmail = $userStmt->fetchColumn();
+                    
+                    if ($userEmail) {
+                        $emailService = new EmailService();
+                        $paymentDetails = [
+                            'amount' => $amount,
+                            'mpesaReceiptNumber' => $mpesaReceiptNumber,
+                            'transactionDate' => $transactionDate,
+                            'phoneNumber' => $phoneNumber
+                        ];
+                        $emailService->sendPaymentReceipt($userEmail, $paymentDetails);
+                    } else {
+                        error_log("No email found for phone number: " . $phoneNumber);
+                    }
+                } catch (Exception $e) {
+                    error_log("Error sending payment receipt email: " . $e->getMessage());
+                }
+            }
+            return true;
+        }
+        return false;
     }
 
     public function insertCancelledStkCallbackResponse($jsonResponse) {
@@ -130,12 +158,6 @@ class Response {
 
         return $stmt->execute();
     }
-
 }
 
 $invoiceNumber = new Response();
-
-?>
-
-
-
