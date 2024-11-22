@@ -1,0 +1,203 @@
+#jengaPamojaContainer {
+    font-family: serif, sans-serif;
+}
+
+#housePlanImage {
+    height: 600px;
+    width: 600px;
+}
+
+.text-warning-secondary {
+    color: darkorange;
+}
+
+#registrationCard,
+#quotationCard {
+    display: none;
+}
+
+#quotationForm input, 
+#quotationForm select,
+#registrationForm input,
+#registrationForm select {
+    background: rgb(217, 255, 217);
+}
+
+#quotationForm input:hover, 
+#quotationForm select:hover,
+#registrationForm input:hover,
+#registrationForm select:hover {
+    cursor: pointer;
+    background: rgb(235, 255, 235);
+}
+
+#quotationForm input:read-only,
+#registrationForm input:read-only {
+    cursor: not-allowed;
+    background: lightgrey;
+}
+
+.bg-dark-primary {
+    background: rgb(0, 71, 0);
+}
+
+#houseDesignCards:hover {
+    background: rgb(238, 255, 238);
+    cursor: pointer;
+}
+
+/* Wrapper to contain both background and content */
+#houseDesignsWrapper{
+    height: 300px;
+}
+
+#paymentPlanOptionsWrapper {
+    height: 600px;
+}
+
+#mortgagePlanOptionsWrapper,
+#chooseUsWrapper {
+    height: 600px;
+}
+
+#houseDesignsWrapper,
+#paymentPlanOptionsWrapper,
+#mortgagePlanOptionsWrapper,
+#chooseUsWrapper {
+    position: relative;
+    overflow: hidden;
+}
+  
+/* Background Layer */
+#paymentPlanOptions,
+#houseDesignsOptions,
+#mortgagePlanOptions,
+#chooseUs {
+    background-image: url('../images/buildings.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Parallax scrolling */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent); /* Fade out effect */
+    mask-image: linear-gradient(to bottom, black, transparent); /* For other browsers */
+    z-index: 1;
+}
+  
+/* Dark Transparent Overlay */
+#paymentPlanOptions::before,
+#houseDesignsOptions::before,
+#mortgagePlanOptions::before,
+#chooseUs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+}
+
+/* Content Layer (Text and Cards) */
+#paymentPlanContent,
+#houseDesignsContent,
+#mortgagePlanOptionsContent,
+#chooseUsContent {
+    position: relative; /* Separate from background */
+    z-index: 3; /* Ensure content is above the background */
+    color: white;
+}
+
+/* Cards Styling */
+#paymentPlanOptionsCards,
+#mortgagePlanOptionsCards {
+    z-index: 5; /* Place cards above everything */
+    background: white; /* Ensure cards have a solid background */
+    color: black; /* Card text color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Prevents any overflow from the card */
+}
+
+#paymentPlanOptionsCards img,
+#mortgagePlanOptionsCards img {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    display: block; /* Removes any space below the image */
+}
+
+#mainNavLogo {
+    width: 75px;
+    height: 75px;
+}
+
+#ourPartnersImage {
+    height: 175px;
+}
+
+/* Responsive design for devices */
+@media (max-width: 1200px) {
+    #housePlanImage {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    #housePlanImage {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    #housePlanImage {
+        height: 300px;
+        width: 300px;
+    }
+    #quotationForm input, 
+    #quotationForm select,
+    #registrationForm input,
+    #registrationForm select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.footer {
+    background-color: #008f36;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer {
+    color: #FFFFFF;
+}
+
+.footer .social-icons a:hover {
+    color: #F47615;
+}
+
+.footer a {
+    color: #FFFFFF;
+}
+
+.footer a:hover {
+    color: #F47615;
+    text-decoration: underline;
+}
+  
+
+

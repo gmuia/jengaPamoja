@@ -1,0 +1,14 @@
+[2024-11-22 09:29:08] [INFO]: Quotation request successfully inserted into database.
+[2024-11-22 09:29:19] [ERROR]: Form submission errors: {"full_names":"Full Names are required.","email":"A valid email address is required.","county":"County is required.","city":"City is required.","phone_number":"Phone number is required.","id_number":"ID number is required.","date_of_birth":"A valid Date of Birth is required.","gender":"Gender is required.","age":"Age must be a positive integer.","house_type":"House type is required.","no_of_beds":"Number of beds must be between 1 and 5.","no_of_baths":"Number of baths must be between 1 and 5."}
+[2024-11-22 09:29:57] [ERROR]: Form submission errors: {"first_name":"First Name is required.","middle_name":"Middle Name is required.","surname":"Surname is required.","id_number":"ID number is required.","kra_pin":"KRA Pin is required.","email":"Invalid email address.","city":"City is required.","county":"County is required.","member_number":"Member Number is required.","phone_number":"Phone number is required.","date_of_birth":"Date of birth is required.","age":"Age is required.","payment_plan":"Payment plan is required.","mortgage_plan":"Mortgage plan is required.","gender":"Gender is required.","relationship_status":"Relationship status is required."}
+[2024-11-22 09:32:32] [INFO]: [2024-11-22 09:32:32] Input Data: {
+    "phoneNumber": "254712918797",
+    "amount": "1",
+    "invoiceNumber": "7869410#7355681732264352",
+    "sharedShortCode": true,
+    "orgShortCode": "",
+    "orgPassKey": "",
+    "callbackUrl": "https:\/\/c61e-80-240-201-162.ngrok-free.app\/Projects\/jengaPamoja\/KBA\/CallBackURL.php",
+    "transactionDescription": "Registration Fees"
+}
+[2024-11-22 09:32:36] [INFO]: Registration was successful.

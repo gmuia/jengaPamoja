@@ -1,0 +1,53 @@
+[2024-11-22 09:34:52] [INFO]: Quotation request successfully inserted into database.
+[2024-11-22 15:12:37] [INFO]: [2024-11-22 15:12:37] Input Data: {
+    "phoneNumber": "254701876510",
+    "amount": "1",
+    "invoiceNumber": "7869410#8592561732288357",
+    "sharedShortCode": true,
+    "orgShortCode": "",
+    "orgPassKey": "",
+    "callbackUrl": "https:\/\/c61e-80-240-201-162.ngrok-free.app\/Projects\/jengaPamoja\/KBA\/CallBackURL.php",
+    "transactionDescription": "Registration Fees"
+}
+[2024-11-22 15:12:43] [INFO]: Registration was successful.
+[2024-11-22 15:13:29] [ERROR]: Exception: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'g.muia@omohhomes.com' for key 'registrations.email' in C:\wamp64\www\form\KEMORA\register.php on line 240
+[2024-11-22 15:13:50] [ERROR]: Exception: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'g.muia@omohhomes.com' for key 'registrations.email' in C:\wamp64\www\form\KEMORA\register.php on line 240
+[2024-11-22 15:14:22] [ERROR]: Exception: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'g.muia@omohhomes.com' for key 'registrations.email' in C:\wamp64\www\form\KEMORA\register.php on line 240
+[2024-11-22 15:16:21] [ERROR]: Exception: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'g.muia@omohhomes.com' for key 'registrations.email' in C:\wamp64\www\form\KEMORA\register.php on line 240
+[2024-11-22 15:17:52] [ERROR]: Exception: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'g.muia@omohhomes.com' for key 'registrations.email' in C:\wamp64\www\form\KEMORA\register.php on line 240
+[2024-11-22 15:29:52] [ERROR]: Exception: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'g.muia@omohhomes.com' for key 'registrations.email' in C:\wamp64\www\form\KEMORA\register.php on line 240
+[2024-11-22 15:30:26] [INFO]: [2024-11-22 15:30:26] Input Data: {
+    "phoneNumber": "254701876510",
+    "amount": "1",
+    "invoiceNumber": "7869410#6791361732289426",
+    "sharedShortCode": true,
+    "orgShortCode": "",
+    "orgPassKey": "",
+    "callbackUrl": "https:\/\/c61e-80-240-201-162.ngrok-free.app\/Projects\/jengaPamoja\/KBA\/CallBackURL.php",
+    "transactionDescription": "Registration Fees"
+}
+[2024-11-22 15:30:29] [INFO]: Registration was successful.
+[2024-11-22 15:34:34] [INFO]: [2024-11-22 15:34:34] Input Data: {
+    "phoneNumber": "254701876510",
+    "amount": "1",
+    "invoiceNumber": "7869410#5275111732289674",
+    "sharedShortCode": true,
+    "orgShortCode": "",
+    "orgPassKey": "",
+    "callbackUrl": "https:\/\/c61e-80-240-201-162.ngrok-free.app\/Projects\/jengaPamoja\/KBA\/CallBackURL.php",
+    "transactionDescription": "Registration Fees"
+}
+[2024-11-22 15:34:36] [INFO]: Registration was successful.
+[2024-11-22 15:36:19] [ERROR]: Exception: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'g.muia@omohhomes.com' for key 'registrations.email' in C:\wamp64\www\form\KEMORA\register.php on line 240
+[2024-11-22 15:52:12] [ERROR]: Exception: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'g.muia@omohhomes.com' for key 'registrations.email' in C:\wamp64\www\form\KEMORA\register.php on line 240
+[2024-11-22 15:54:57] [INFO]: [2024-11-22 15:54:57] Input Data: {
+    "phoneNumber": "254701876510",
+    "amount": "1",
+    "invoiceNumber": "7869410#7915441732290897",
+    "sharedShortCode": true,
+    "orgShortCode": "",
+    "orgPassKey": "",
+    "callbackUrl": "https:\/\/c61e-80-240-201-162.ngrok-free.app\/Projects\/jengaPamoja\/KBA\/CallBackURL.php",
+    "transactionDescription": "Registration Fees"
+}
+[2024-11-22 15:54:59] [INFO]: Registration was successful.
